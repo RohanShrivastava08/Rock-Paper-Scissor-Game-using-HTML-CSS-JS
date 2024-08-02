@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Rock, Paper, Scissors Game</h1>
+            <p>Challenge the computer and see who wins!</p>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="score-board">
+            <div id="user-section">
+                <div id="user-label" class="badge">User</div>
+                <div class="choices">
+                    <div class="choice" id="rock">
+                        <i class="fas fa-hand-rock"></i>
+                        <p>Rock</p>
+                    </div>
+                    <div class="choice" id="paper">
+                        <i class="fas fa-hand-paper"></i>
+                        <p>Paper</p>
+                    </div>
+                    <div class="choice" id="scissors">
+                        <i class="fas fa-hand-scissors"></i>
+                        <p>Scissors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="score">
+                <span id="user-score">0</span>:<span id="computer-score">0</span>
+            </div>
+            <div id="computer-section">
+                <div id="computer-label" class="badge">Comp</div> <br> <br>
+                <p id="computer-choice">Computer chose: <span id="computer-choice-icon">...</span></p>
+            </div>
+        </div>
+        <div class="result">
+            <p id="result-message">Make your move!</p>
+        </div>
+        <div class="history">
+            <p id="win-loss-draw-ratio">Wins: 0 | Losses: 0 | Draws: 0</p>
+        </div>
+        <button id="restart-btn">Restart</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Made by Rohan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
